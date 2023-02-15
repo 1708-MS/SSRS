@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>MyDataSource</DataSourceReference>
+      <CommandText>SELECT TOP (1000) [QuestionId]
+      ,[QuestionText]
+      ,[QuestionMarks]
+      ,[AnswerId]
+      ,[QuestionType]
+      ,[ExamPaperId]
+  FROM [EMS_Api01].[dbo].[Questions]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="QuestionId">
+        <DataField>QuestionId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="QuestionText">
+        <DataField>QuestionText</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="QuestionMarks">
+        <DataField>QuestionMarks</DataField>
+        <rd:TypeName>System.Single</rd:TypeName>
+      </Field>
+      <Field Name="AnswerId">
+        <DataField>AnswerId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="QuestionType">
+        <DataField>QuestionType</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ExamPaperId">
+        <DataField>ExamPaperId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
